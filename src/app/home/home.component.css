@@ -1,0 +1,155 @@
+.banner {
+    background-image: url("https://i.postimg.cc/wMKngTv3/Untitled-design-23.png");
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+.image{
+    position: relative;
+}
+.image2{
+    position: relative;
+}
+
+#heading h1{
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+}
+
+#heading span{
+    text-shadow: 2px 3px #6d8e11;;
+
+}
+#box{
+    position: relative;
+    margin-top: -5%;
+    margin-left: 8%;
+
+}
+#button{
+    border-radius: 5px 25px 5px 25px;
+    padding: 20px;
+    width: 120px;
+    font-weight: 646;
+    height: 46px;
+}
+.profile img{
+    top: 5%; 
+margin-left: -50%;
+margin-top: 50%;
+width: 100%; 
+    height: auto;
+}
+  .card{
+    max-height: 300px;
+
+    max-width: 200px;
+  }
+
+  .amenities{
+    background-image: url("https://i.postimg.cc/2yMwx90N/Amenities.png");
+    background-color: #fff7db;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  .blobs{
+    position: relative;
+}
+.blob{
+
+width: 100px;
+height: 100px;
+background-color: #97bf2b;
+border-radius: 24% 60% 35% 60%/30% 35% 60% 65%;
+margin-left: 30%;
+}
+#icon{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -7%;
+    color: #fff;
+
+
+}
+.abt-cards{
+position: relative;}
+ .backimg{
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: absolute;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+  margin-left: 16%;
+  margin-top: -20%;
+}
+
+.para{
+    line-height: 40px;
+}
+
+#processcard{
+    border-radius: 10px;
+}
+
+#d3{
+    margin-top: 13%;
+}
+.landing{
+    max-width: 100%;
+    overflow-x: hidden;}
+.carousel{
+    margin: auto;
+    width: 50%;
+   
+}
+.vl {
+    border-left: 1px solid rgb(73, 73, 73);
+    height: 100%;
+  }
+
+  .abt-cards{
+    overflow: hidden;
+  }
+  .contact{
+    overflow: hidden;
+  }
+@media only screen and (max-width: 768px) {
+    .profile img{
+        top: 5%; 
+    margin-left: 0%;
+    width: 20%;
+    }
+    #box{
+        margin-left: -7%;
+        margin-top: 10%;
+    }
+    #box .card 
+    {
+        max-width: 600px;
+        max-height: 150px;
+        padding: 5px;
+        display: flex;
+        text-align: center;
+    }
+
+    .line1,.line2,.backimg{
+        display: none;
+    }
+   #productcard{
+    max-height: 100%;
+   }
+  }
+  
+
+  

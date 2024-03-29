@@ -1,0 +1,105 @@
+<form [formGroup]="contactFormModel" (ngSubmit)="send()">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="mb-3" style="text-align: start;">
+                <label for="firstname" class="form-label " >First Name</label>
+                <input [(ngModel)]="firstname" formControlName="firstname" type="text" name="firstname"
+                    class="form-control" id="firstname" aria-describedby="firstname" placeholder="Enter First Name"
+                    style="background-color: #f3f3f3;">
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-6 mb-4">
+            <div class="mb-3" style="text-align: start;">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" formControlName="lastname" class="form-control" id="lastname" name="lastname"
+                    aria-describedby="firstname" placeholder="Enter Last Name" style="background-color: #f3f3f3;">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Error message for first name -->
+    <div *ngIf="contactFormModel.get('firstname')?.errors&&contactFormModel.get('firstname')?.touched">
+        <p class="text-danger" style="font-size:small;">Please enter valid Name</p>
+    </div>
+    <!-- Error message for last name -->
+    <div *ngIf="contactFormModel.get('lastname')?.errors&&contactFormModel.get('lastname')?.touched">
+        <p class="text-danger" style="font-size:small;">Please enter valid Name</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4" style="text-align: start;">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" formControlName="email" class="form-control" id="email" name="email"
+                aria-describedby="emailHelp" placeholder="Enter Your Email" style="background-color: #f3f3f3;">
+
+        </div>
+        <div class="col-md-6 mb-4" style="text-align: start;">
+            <label for="phone" class="form-label"> Phone</label>
+            <input type="text" formControlName="phone" class="form-control" id="phone" name="phone"
+                aria-describedby="emailHelp" placeholder="Enter Phone Number" style="background-color: #f3f3f3;">
+
+
+        </div>
+    </div>
+
+      <!-- Error message for phone -->
+      <div *ngIf="contactFormModel.get('phone')?.errors&&contactFormModel.get('phone')?.touched">
+        <p  class="text-danger" style="font-size:small;">Please enter valid Email</p>
+      </div>
+    
+    <!-- Error message for email -->
+    <div *ngIf="contactFormModel.get('email')?.errors&&contactFormModel.get('email')?.touched">
+        <p  class="text-danger" style="font-size:small;">Please enter valid Email</p>
+      </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-4" style="text-align: start;">
+            <div class="mb-3">
+                <label for="subject" class="form-label text-start">Subject</label>
+                <input type="text" formControlName="subject" class="form-control" id="subject" name="subject"
+                    aria-describedby="subject" placeholder="Enter Phone subject" style="background-color: #f3f3f3;">
+            </div>
+        </div>
+    </div>
+     <!-- Error message for subject -->
+     <div *ngIf="contactFormModel.get('subject')?.errors&&contactFormModel.get('subject')?.touched">
+        <p class="text-danger" style="font-size:small;">Please enter valid subject</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-4" style="text-align: start;">
+            <div class="mb-3">
+                <label for="message" class="form-label text-start">Message</label>
+                <textarea class="form-control" formControlName="message" id="message" name="message"
+                    aria-describedby="address" placeholder="Enter Your Message here..."
+                    style="background-color: #f3f3f3;"></textarea>
+
+
+
+            </div>
+        </div>
+    </div>
+
+      <!-- Error message for message -->
+      <div *ngIf="contactFormModel.get('message')?.errors&&contactFormModel.get('message')?.touched">
+        <p class="text-danger" style="font-size:small;">Please enter valid message</p>
+    </div>
+
+
+    <!-- Submit button -->
+    <button (click)="onButtonClick()" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit"
+        class="btn btn-block mb-4 mt-4 text-white" style="background-color:#97bf2b ;">
+        Send Your Message
+    </button>
+
+
+</form>

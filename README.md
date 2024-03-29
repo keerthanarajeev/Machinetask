@@ -1,6 +1,47 @@
 # AngularProject
 
+Angular Basics:
+
+User can easly navigates through different parts of page throgh navigationbar
+Demonstrates one-way and two-way data binding.
+Utilizes string interpolation and property binding for one-way binding.
+Implements two-way data binding with NgModel.
+
+Reusable Social Media Icons:
+
+Created a reusable component for social media icons.
+Easily integrated across multiple components for consistency.
+
+Data Sharing:
+
+Facilitates data sharing between components via a service file.
+Ensures smooth communication and interaction between different parts of the website.
+
+Form Validation:
+
+Implements form validation in the contact form component.
+Utilizes ReactiveFormsModule for reactive form handling.
+Enhances user experience by validating input data effectively.
+
+Responsive Design:
+
+Utilizes Bootstrap and CSS media queries for responsiveness.
+Ensures the website adapts seamlessly to various screen sizes and devices.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+
+
+## Instructions to Setup and Run this Project:
+
+1. Install Angular CLI - npm install -g @angular/cli
+2. Create a New Project - ng new angular-project
+3. Navigate to the Project Directory - cd angular-project
+4. Start the Development Server - ng serve
+5. Create Components - ng generate component component-name
+6. Configure Routes 
+7. Add Content to Components
+8. Run the Application - ng serve --open
+
 
 ## Development server
 
